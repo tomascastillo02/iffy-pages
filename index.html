@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iffy</title>
+    <link rel="icon" href="https://fav.farm/" type="image/x-icon">
+    <script>
+        const img = document.getElementById("main-image");
+        if(window.location.host.includes("github.io")) {
+            img.src = "https://picsum.photos/id/200/200/300";
+            img.alt = "image displayed because ON github pages";
+        }
+    </script>
+</head>
+    <body>
+        <main>
+            <h1>Iffy</h1>
+            <img id="main-image" src="https://picsum.photos/id/343/200/300" alt="image displayed because not github pages">
+        </main>
+    </body>
+</html>
